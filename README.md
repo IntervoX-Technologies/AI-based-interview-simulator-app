@@ -1,5 +1,8 @@
 # 🚀 IntervoX: AI-Powered Interview Simulator
 
+<img width="1562" height="680" alt="8" src="https://github.com/user-attachments/assets/e082d1b2-55ca-4f4e-ab4c-9016e9cdb67b" />
+
+ <img width="1897" height="852" alt="9" src="https://github.com/user-attachments/assets/ec2ea5a0-3fda-43c2-ba7f-4fcc8f6db859" />
 
 **IntervoX** is a cutting-edge mock interview platform designed specifically for undergraduates.
 =======
@@ -44,9 +47,13 @@ By leveraging Artificial Intelligence and real-time data streaming, IntervoX pro
 
 
 
----
+---<img width="946" height="513" alt="7" src="https://github.com/user-attachments/assets/89a60690-08aa-4cf8-a4db-d12ea984c1d5" />
 
-## 🚀 Installation & Setup
+<img width="1862" height="990" alt="6" src="https://github.com/user-attachments/assets/4fee8501-eb00-4d8f-b2f2-9ef8245bdfb2" />
+
+<img width="1902" height="985" alt="5" src="https://github.com/user-attachments/assets/5605f354-f779-4229-affb-76fea75a9f25" />
+ 
+ ## 🚀 Installation & Setup
 
 ### 1. Database Configuration
 Create a MySQL database named `intervox_db` and execute the following:
@@ -80,8 +87,6 @@ IntervoX/
 └── README.md
 
 
-<img width="1897" height="852" alt="9" src="https://github.com/user-attachments/assets/e66652bf-9066-4336-8687-4456dc996cd6" />
-<img width="1562" height="680" alt="8" src="https://github.com/user-attachments/assets/26a4dd64-656f-4d2f-8608-6c4429eaf54b" />
-<img width="946" height="513" alt="7" src="https://github.com/user-attachments/assets/2516e048-bb1f-4b51-9a0a-a4f383e77174" />
-<img width="1862" height="990" alt="6" src="https://github.com/user-attachments/assets/8c99d2a0-b823-42a1-827a-ef9eb8e3434c" />
-<img width="1902" height="985" alt="5" src="https://github.com/user-attachments/assets/42c09161-8f86-40bb-bdca-1cf66c3e0a23" />
+
+
+

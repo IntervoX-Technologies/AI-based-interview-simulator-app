@@ -11,15 +11,6 @@
 
 By leveraging Artificial Intelligence and real-time data streaming, IntervoX provides a high-pressure environment to help budding developers master technical and HR interviews.
 
----
-
-## 🎓 Institutional Context
-* **Affiliation:** General Sir John Kotelawala Defence University (KDU)
-* **Community:** British Computer Society (BCS) Student Chapter
-* **Project Goal:** To bridge the gap between academic learning and industry recruitment standards.
-
----
-
 ## ✨ Key Features
 
 * **🤖 AI-Driven Questioning:** Generates dynamic, category-specific questions (Java, C++, Web Development, and HR) using Groq/OpenAI.

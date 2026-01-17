@@ -1,0 +1,37 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# --- Node.js ---
+# This folder is huge and can be re-installed with 'npm install'
+node_modules/
+
+# --- Environment Variables (SECRETS) ---
+# This is where your Groq API Key and DB passwords live. NEVER share this.
+.env
+
+# --- Production Build ---
+build/
+dist/
+
+# --- System Files ---
+.DS_Store
+Thumbs.db
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

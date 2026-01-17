@@ -1,0 +1,309 @@
+:root {
+  --bg: #0f1512;
+  --panel: #060a08;
+  --neon: #00ff88;
+  --text: #e6ffe9;
+  --navbar-bg: #0b0f0c;
+}
+
+body {
+  background: var(--panel);
+  color: var(--text);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+.center-card {
+  max-width: 420px;
+  margin: 80px auto;
+  padding: 30px;
+  background: var(--bg);   /* NEW darker shade */
+  border-radius: 14px;
+  border: 2px solid var(--neon);
+  box-shadow:
+    0 0 15px rgba(0,255,136,0.5),
+    inset 0 0 10px rgba(0,255,136,0.2); /* NEW */
+  text-align: center;
+} 
+
+
+.center-card input,
+textarea {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+  background: var(--panel);
+  border: 1.5px solid var(--neon);
+  color: var(--text);
+  border-radius: 8px;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  box-shadow: 0 0 10px rgba(0,255,136,0.6);
+} 
+
+.link {
+  color: #00ff88;
+  cursor: pointer;
+}
+
+.neon {
+  color: #00ff88;
+  text-shadow: 0 0 10px #00ff88;
+}
+
+/* 3D rotating cube */
+.cube {
+  width: 130px;
+  height: 130px;
+  margin: 50px auto;
+  border: 2px solid #00ff88;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00ff88;
+  font-size: 26px;
+  text-shadow: 0 0 10px #00ff88;
+  box-shadow:
+    0 0 20px rgba(0,255,136,0.6),
+    inset 0 0 10px rgba(0,255,136,0.4);
+  animation: rotate3d 5s linear infinite;
+}
+
+
+@keyframes rotate3d {
+  from {
+    transform: rotateX(0) rotateY(0);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+button {
+  background-color: transparent;
+  color: var(--neon);
+  border: 2px solid var(--neon);
+  padding: 10px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(0,255,136,0.4);
+}
+
+button:hover {
+  background-color: var(--neon);
+  color: #000;
+  box-shadow: 0 0 20px rgba(0,255,136,0.8);
+}
+
+/* small navbar-specific adjustments */
+.navbar {
+  padding: 15px 30px;
+  background: var(--navbar-bg);
+  border-bottom: 2px solid var(--neon);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0,255,136,0.3);
+}
+
+.navbar button {
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+/* glow button variant */
+.glow {
+  background-color: var(--neon);
+  color: #000;
+  box-shadow: 0 0 18px rgba(0,255,136,0.6);
+  border: 2px solid var(--neon);
+} 
+
+h1, h2 {
+  color: var(--neon);
+  text-shadow: 0 0 8px rgba(0,255,136,0.7);
+}
+
+.home {
+  padding: 60px;
+  text-align: center;
+}
+
+/* Container Background */
+.register-container {
+  background: #050505;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px; /* Enables 3D space */
+}
+
+/* 3D Letters Effect */
+.intervox-3d {
+  font-size: 6rem;
+  font-weight: 900;
+  color: #14b322;
+  text-transform: uppercase;
+  position: relative;
+  /* Stacked shadows create the 3D depth */
+  text-shadow: 
+    0 1px 0 #ccc, 0 2px 0 #c5c5c5, 0 3px 0 #bbb, 0 4px 0 #b0b0b0,
+    0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15),
+    0 0 20px rgba(0, 255, 255, 0.5); /* Cyan Glow */
+  transform: rotateX(15deg) rotateY(-10deg);
+  animation: float 4s ease-in-out infinite;
+  /* Ensure the 3D text doesn't collapse when empty */
+
+  min-width: 1ch; /* Keeps a tiny space even if empty */
+  margin: 0;
+  white-space: nowrap; /* Prevents text from wrapping during typing */
+
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% { transform: rotateX(15deg) rotateY(-10deg) translateY(0px); }
+  50% { transform: rotateX(15deg) rotateY(-10deg) translateY(-20px); }
+}
+
+/* Subtitle Neon */
+.subtitle-neon {
+  color: rgb(41, 240, 190);
+  letter-spacing: 5px;
+  font-weight: 300;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+  margin-bottom: 30px;
+}
+
+/* Interactive Card */
+.neon-border {
+  border: 2px solid #0ff;
+  box-shadow: 0 0 15px #0ff, inset 0 0 15px #0ff;
+  padding: 40px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+/* Fix for the "Jumping" issue */
+.brand-header {
+  min-height: 180px; /* High enough to hold INTERVOX without shifting */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+
+
+/* Blinking cursor style */
+.cursor {
+  display: inline-block;
+  color: rgb(19, 211, 95);
+  font-weight: 100;
+  animation: blink 1s step-end infinite;
+  text-shadow: 0 0 10px rgb(42, 209, 81);
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* Container for the 3D effect */
+.icon-container {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 500px;
+  margin-bottom: 15px;
+}
+
+/* 1. The Floating Cube (Completed Interviews) */
+.cube-3d {
+  width: 30px;
+  height: 30px;
+  background: #00ff88;
+  transform: rotateX(45deg) rotateY(45deg);
+  box-shadow: 0 0 15px #00ff88, inset 0 0 10px rgba(0,0,0,0.5);
+  animation: rotateCube 4s infinite linear;
+}
+
+/* 2. The Glowing Pyramid (Avg Score) */
+.pyramid-3d {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 35px solid #00ff88;
+  filter: drop-shadow(0 0 10px #00ff88);
+  animation: pulsePyramid 2s infinite ease-in-out;
+}
+
+/* 3. The Rotating Sphere (Questions Faced) */
+.sphere-3d {
+  width: 35px;
+  height: 35px;
+  background: radial-gradient(circle at 30% 30%, #00ff88, #004422);
+  border-radius: 50%;
+  box-shadow: 0 0 20px #00ff88;
+  animation: floatSphere 3s infinite ease-in-out;
+}
+
+/* Animations */
+@keyframes rotateCube {
+  from { transform: rotateX(0) rotateY(0); }
+  to { transform: rotateX(360deg) rotateY(360deg); }
+}
+
+@keyframes pulsePyramid {
+  0%, 100% { transform: scale(1) translateY(0); opacity: 0.8; }
+  50% { transform: scale(1.2) translateY(-5px); opacity: 1; }
+}
+
+@keyframes floatSphere {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-10px) scale(1.1); }
+}
+
+/* Stat Card Hover */
+.stat-card:hover .icon-container div {
+  filter: brightness(1.5) contrast(1.2);
+  box-shadow: 0 0 30px #00ff88;
+}
+.logout-btn {
+  background: transparent;
+  color: #ff4444; /* Red for logout */
+  border: 1px solid #ff444466;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: #ff444422;
+  box-shadow: 0 0 10px #ff4444;
+}
+@keyframes panic-glow {
+  0% { box-shadow: 0 0 5px #ff4444; }
+  50% { box-shadow: 0 0 20px #ff4444; }
+  100% { box-shadow: 0 0 5px #ff4444; }
+}
+
+.glass-input.panic {
+  animation: panic-glow 1s infinite;
+  border: 1px solid #ff4444 !important;
+}

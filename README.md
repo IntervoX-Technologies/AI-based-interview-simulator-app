@@ -1,10 +1,10 @@
 # 🚀 IntervoX: AI-Powered Interview Simulator
 
-<<<<<<< HEAD
-**IntervoX** is a cutting-edge mock interview platform designed specifically for students at **General Sir John Kotelawala Defence University (KDU)** and members of the **British Computer Society (BCS) Student Chapter**. 
+
+**IntervoX** is a cutting-edge mock interview platform designed specifically for undergraduates.
 =======
 
->>>>>>> 9b0e0064a1be0613d4c849a8563f96ba3c819f98
+
 
 By leveraging Artificial Intelligence and real-time data streaming, IntervoX provides a high-pressure environment to help budding developers master technical and HR interviews.
 

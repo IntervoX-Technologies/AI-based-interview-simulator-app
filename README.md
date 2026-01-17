@@ -74,6 +74,14 @@ IntervoX/
 │   │   ├── pages/        # Dashboard.js, Interview.js, Analytics.js
 │   │   └── components/   # Navbar.js, Sidebar.js
 ├── intervox-backend/
-│   ├── server.js         # Express + Socket.io Server
+│   ├── server.js attachments/assets/b08edeb1-e0b7-4b0d-b081-f44d205627b5" />
+        # Express + Socket.io Server
 │   └── .env              # Secrets & Keys
 └── README.md
+
+
+<img width="1897" height="852" alt="9" src="https://github.com/user-attachments/assets/e66652bf-9066-4336-8687-4456dc996cd6" />
+<img width="1562" height="680" alt="8" src="https://github.com/user-attachments/assets/26a4dd64-656f-4d2f-8608-6c4429eaf54b" />
+<img width="946" height="513" alt="7" src="https://github.com/user-attachments/assets/2516e048-bb1f-4b51-9a0a-a4f383e77174" />
+<img width="1862" height="990" alt="6" src="https://github.com/user-attachments/assets/8c99d2a0-b823-42a1-827a-ef9eb8e3434c" />
+<img width="1902" height="985" alt="5" src="https://github.com/user-attachments/assets/42c09161-8f86-40bb-bdca-1cf66c3e0a23" />
